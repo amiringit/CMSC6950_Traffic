@@ -1,6 +1,8 @@
 # CMSC6950_Traffic
 CMSC6950 Project
+
 #INSTALLATION and DEPENDENCIES
+
 Cartopy and shapely have strong dependencies to dynamic libraries which may not be available on your system by default. If possible, install Anaconda, then:
 conda install cartopy shapely
 Then either with pip or from sources install the package as follows:
