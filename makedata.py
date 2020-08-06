@@ -1,7 +1,6 @@
 from matplotlib import pyplot as plt
 import numpy as np
 import pandas as pd
-import wget
 
 #download data
 !wget https://opensky-network.org/datasets/covid-19/flightlist_20200201_20200229.csv.gz
