@@ -1,0 +1,4 @@
+report.pdf: report.tex plot1.png plot2.png
+almost_clean:
+	latexmk -c
+	 
