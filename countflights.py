@@ -1,6 +1,7 @@
-#make new dataframe containing the number of departed aircraft per day 
+#make new dataframe containing the number of departed aircrafts per day 
 from traffic.data import airports
-
+import pandas as pd
+from makedata import *
 
 airports_subset = [
     # Europe

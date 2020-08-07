@@ -1,12 +1,14 @@
 report.pdf: report.tex plot1.png plot2.png
 	latexmk -pdf
 
-plot1.png: makedata.py countflights.py
-	python plot1.py
 
 plot2.png: makedata.py countflights.py
 	python plot2.py
 
+plot1.png: makedata.py countflights.py
+        python plot1.py
+	countflights.py
+	makedata.py
 .PHONY: clean almost_clean
 
 clean: almost_clean
@@ -15,5 +17,7 @@ clean: almost_clean
 	rm plot2.png
 
 almost_clean:
+	latexmk -c
+	rm __pycache__
 	
 	 
